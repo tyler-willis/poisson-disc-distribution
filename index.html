@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poisson Disc Distribution</title>
+    
+    <link rel="stylesheet" href="poisson.css">
+</head>
+<body>
+    <canvas></canvas>
+
+    <script src="poisson.js"></script>
+
+    <div class="controls">
+        <h1 class="title">Poisson Disc Distribution</h1>
+        <div class="links">
+            <a href="https://www.cct.lsu.edu/~fharhad/ganbatte/siggraph2007/CD2/content/sketches/0250.pdf">Explanation</a>
+            <a href="https://github.com/tyler-willis/poisson-disc-distribution">Source Code</a>
+        </div>
+        <br>
+        <div>
+            <label for="radius">Radius:</label>
+            <input type="number" id="radius" name="quantity" min="10" max="200" value="50">
+        </div>
+        <div>
+            <label for="showGrid">Show Grid:</label>
+            <input type="checkbox" id="showGrid">
+        </div>
+        <div>
+            <button id="generate" onclick="init()">Generate</button>
+        </div>
+    </div>
+</body>
+</html>
